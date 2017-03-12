@@ -1,0 +1,106 @@
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+html,body{
+	padding:0;
+	margin:0;
+}
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+h1{
+	font-family:Roboto,sans-serif;
+	font-size:50px;
+	font-weight:bold;
+	color:#fff;
+	vertical-align:middle;
+	padding:100px;
+	margin:0;
+}
+.container{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.intro,.about{
+	width:100%;
+	height:100%;
+}
+.intro{
+	margin:0;
+	background:url(../img/intro.jpg);
+	background-attachment: fixed;
+    background-position: 50% 50%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	text-align:center;
+}
+.intro .social{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:20px;
+}
+.intro .social span i{
+	width:60px !important;
+	height:60px !important;
+	line-height:40px;
+	font-size:40px;
+	border:1px solid #fff;
+	border-radius:50px;
+	padding:10px;
+	margin:10px;
+	transition:0.2s linear all;
+}
+.intro .social span i:hover{
+	background:#fff;
+	color:#000;
+}
+.about{
+	background:url(../img/about.jpg);
+	background-attachment: fixed;
+    background-position: 50% 50%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	text-align:left;
+}
+#about_content{
+	padding:20px;
+	font-size:22px;
+	font-weight:bold;
+	color:#fff;
+	word-wrap:break-word;
+}
+#particles-js{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+}
+#particles-js canvas{
+	margin-top:-300px;
+}
