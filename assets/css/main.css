@@ -39,6 +39,10 @@ h1{
 	padding:100px;
 	margin:0;
 }
+.navbar.navbar-inverse {
+	background: transparent;
+	/*background:rgba(63, 81, 181, 0.2) !important;*/
+}
 .container{
 	margin:0;
 	padding:0;
@@ -56,6 +60,9 @@ h1{
 	background-repeat: no-repeat;
     background-size: cover;
 	text-align:center;
+}
+.intro h1{
+	padding-top: 300px;
 }
 .intro .social{
 	width:100%;
@@ -87,6 +94,9 @@ h1{
     background-size: cover;
 	text-align:left;
 }
+.about h1{
+	text-align:center;
+}
 #about_content{
 	padding:20px;
 	font-size:22px;
@@ -103,4 +113,20 @@ h1{
 }
 #particles-js canvas{
 	margin-top:-300px;
+}
+.navbar .navbar-nav {
+    display: inline-block !important;
+    float: none !important;
+}
+.navbar .navbar-nav li{
+	margin:0px 15px;
+}
+.navbar .navbar-collapse {
+    text-align: center !important;
+}
+
+@media(max-width:480px){
+	.intro h1{
+		padding-top: 100px;
+	}
 }
