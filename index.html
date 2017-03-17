@@ -32,6 +32,7 @@
 				<li><a href="#home" id="goto_home">Home</a></li>
 				<li><a href="#about" id="goto_about">About</a></li>
 				<li><a href="#services" id="goto_services">Services</a></li>
+				<li><a href="#blog" id="goto_blog">Blog</a></li>
 				<li><a href="#contact" id="goto_contact">Contact</a></li>
 				<!-- <li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -80,7 +81,7 @@
 		</section>
 		<section class="services">
 			<h1>Services</h1>
-			<div class="row">
+			<div class="row" style="margin:0;">
 				<div class="col-md-3 col-md-offset-1">
 					<div class="bs-component">
 					  <div class="alert alert-blue center">
@@ -103,7 +104,16 @@
 					</div>
 				  </div>
 			</div>
+			<p>In 2017, the best and brightest from Rutgers University united to form a digital marketing and website development agency. 
+			<br>As the new kid on the block, SHA Digital faces the challenge of competing in a highly saturated market.
+			<br><br>Are you frustrated with marketing agencies out there who always over promise but can never seem to deliver on results?</p>
 		</section>
+		<section class="blog">
+			<h1>Blog</h1>
+			<p>We are super transparent at this marketing agency. So much that we are documenting our journey building this business. Our successes, our failures, our experiments, and insights are featured here.
+			<br><br><em>Sample post (Brief from recent post)</em></p>
+		</section>
+		<a href="javascript:void(0)" class="btn btn-danger btn-fab contact-btn"><i class="material-icons">perm_phone_msg</i></a>
 	</div>
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/tether/dist/js/tether.min.js"></script>
@@ -154,6 +164,15 @@
 				scrollTop: $('.services').offset().top
 			}, 800, function(){
 				window.location.hash = "services";
+			});
+			return false;
+		});
+		$("#goto_blog").click(function(){
+			var hash=this.hash;
+			$('html, body').animate({
+				scrollTop: $('.blog').offset().top
+			}, 800, function(){
+				window.location.hash = "blog";
 			});
 			return false;
 		});
