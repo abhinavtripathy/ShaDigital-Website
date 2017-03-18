@@ -168,6 +168,8 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/jquery/jquery.colors.min.js"></script>
 	<script type="text/javascript" src="libs/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap-material-design/dist/js/material.min.js"></script>
@@ -178,10 +180,12 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		function slider() {
-			if (document.body.scrollTop > 100) //Show the slider after scrolling down 100px
-				$('#mynavbar').css({"background": '#3f51b5'});
-			else
-				$('#mynavbar').css({"background": 'transparent'});
+			if (document.body.scrollTop > 100){
+				$('#mynavbar').stop().animate({backgroundColor: '#3f51b5'});
+			}
+			else{
+				$('#mynavbar').stop().animate({backgroundColor: 'transparent'});
+			}
 		}
 		slider();
 		$(window).scroll(function () {
