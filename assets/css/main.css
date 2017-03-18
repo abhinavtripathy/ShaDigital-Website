@@ -48,7 +48,7 @@ h1{
 	padding:0;
 	width:100%;
 }
-.intro,.about,.services,.blog{
+.intro,.about,.services,.blog,.contact{
 	width:100%;
 	height:100%;
 }
@@ -171,11 +171,19 @@ h1{
 .center{
 	text-align:center;
 }
-.contact-btn{
-	position:fixed !important;
-	z-index:999999 !important;
-	bottom:20px !important;
-	right:20px !important;
+.contact{
+	background:url(../img/contact.jpg);
+	background-attachment: fixed;
+    background-position: 50% 50%;
+	background-repeat: no-repeat;
+    background-size: cover;
+	text-align:left;
+}
+.contact h1{
+	text-align:Center;
+}
+input, textarea, select{
+	color:#fff !important;
 }
 @media(max-width:480px){
 	.intro h1{

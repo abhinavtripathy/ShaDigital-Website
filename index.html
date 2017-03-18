@@ -33,7 +33,7 @@
 				<li><a href="#about" id="goto_about">About</a></li>
 				<li><a href="#services" id="goto_services">Services</a></li>
 				<li><a href="#blog" id="goto_blog">Blog</a></li>
-				<li><a href="#contact" class="open-contact">Contact</a></li>
+				<li><a href="#contact" id="goto_contact">Contact</a></li>
 				<!-- <li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 				  <ul class="dropdown-menu">
@@ -48,7 +48,7 @@
 			</div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<section class="intro">
+		<section class="intro" id="home">
 			<div id="particles-js">
 				<h1>We are SHA Digital</h1>
 				<div class="social">
@@ -75,12 +75,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<h1>At Sha Digital</h1>
 			<span id="about_content">Hello World</span>
 		</section>
 		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/8jpGxS8R7bc" frameborder="0" allowfullscreen></iframe>
-		<section class="services">
+		<section class="services" id="services">
 			<h1>Services</h1>
 			<div class="row" style="margin:0;">
 				<div class="col-md-3 col-md-offset-1">
@@ -109,63 +109,54 @@
 			<br>As the new kid on the block, SHA Digital faces the challenge of competing in a highly saturated market.
 			<br><br>Are you frustrated with marketing agencies out there who always over promise but can never seem to deliver on results?</p>
 		</section>
-		<section class="blog">
+		<section class="blog" id="blog">
 			<h1>Blog</h1>
 			<p>We are super transparent at this marketing agency. So much that we are documenting our journey building this business. Our successes, our failures, our experiments, and insights are featured here.
 			<br><br><em>Sample post (Brief from recent post)</em></p>
 		</section>
-		<a href="javascript:void(0)" class="btn btn-danger btn-fab contact-btn open-contact"><i class="material-icons">perm_phone_msg</i></a>
-		<div class="modal" id="contact-modal">
-		  <div class="modal-dialog">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Contact Us</h4>
-			  </div>
-			  <div class="modal-body">
-				<div class="form-group">
-				  <label for="uName" class="col-md-2 control-label">Name</label>
-				  <div class="col-md-10">
-					<input type="text" class="form-control" id="uName" placeholder="Name">
-				  </div>
+		<section class="contact" id="contact">
+			<h1>Contact Us</h1>
+			<div class="row" style="margin:0">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="form-group">
+					  <label for="uName" class="col-md-2 control-label">Name</label>
+					  <div class="col-md-10">
+						<input type="text" class="form-control" id="uName" placeholder="Name">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="uPhone" class="col-md-2 control-label">Phone</label>
+					  <div class="col-md-10">
+						<input type="number" class="form-control" id="uPhone" placeholder="Phone" maxlength=10>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="uEmail" class="col-md-2 control-label">Email</label>
+					  <div class="col-md-10">
+						<input type="email" class="form-control" id="uEmail" placeholder="Email">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="uReason" class="col-md-2 control-label">Reason</label>
+					  <div class="col-md-10">
+						<select id="uReason" class="form-control">
+						  <option>Employment opportunities</option>
+						  <option>Potential Partnership</option>
+						  <option>Request for more information</option>
+						  <option>Other</option>
+						</select>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="uMsg" class="col-md-2 control-label">Message</label>
+					  <div class="col-md-10">
+						<textarea class="form-control" rows="3" id="uMsg" placeholder="Your Message"></textarea>
+					  </div>
+					</div>
+					<center><button class="btn btn-primary btn-raised">Send <i class="material-icons">send</i></button></center>
 				</div>
-				<div class="form-group">
-				  <label for="uPhone" class="col-md-2 control-label">Phone</label>
-				  <div class="col-md-10">
-					<input type="number" class="form-control" id="uPhone" placeholder="Phone" maxlength=10>
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label for="uEmail" class="col-md-2 control-label">Email</label>
-				  <div class="col-md-10">
-					<input type="email" class="form-control" id="uEmail" placeholder="Email">
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label for="uReason" class="col-md-2 control-label">Reason</label>
-				  <div class="col-md-10">
-					<select id="uReason" class="form-control">
-					  <option>Employment opportunities</option>
-					  <option>Potential Partnership</option>
-					  <option>Request for more information</option>
-					  <option>Other</option>
-					</select>
-				  </div>
-				</div>
-				<div class="form-group">
-				  <label for="uMsg" class="col-md-2 control-label">Message</label>
-				  <div class="col-md-10">
-					<textarea class="form-control" rows="3" id="uMsg"></textarea>
-				  </div>
-				</div>
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			  </div>
 			</div>
-		  </div>
-		</div>
+		</section>
 	</div>
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
@@ -232,8 +223,14 @@
 			});
 			return false;
 		});
-		$(".open-contact").click(function(){
-			$("#contact-modal").modal(open);
+		$("#goto_contact").click(function(){
+			var hash=this.hash;
+			$('html, body').animate({
+				scrollTop: $('.contact').offset().top
+			}, 800, function(){
+				window.location.hash = "contact";
+			});
+			return false;
 		});
 	});
 	</script>
