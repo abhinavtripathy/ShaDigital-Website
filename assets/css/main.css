@@ -51,6 +51,7 @@ h1{
 .intro,.about,.services,.blog,.contact{
 	width:100%;
 	height:100%;
+	overflow:hidden;
 }
 .intro{
 	margin:0;
@@ -62,7 +63,27 @@ h1{
 	text-align:center;
 }
 .intro h1{
-	padding-top: 300px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-shadow:
+    0 1px #808d93,
+    -1px 0 #cdd2d5,
+    -1px 2px #808d93,
+    -2px 1px #cdd2d5,
+    -2px 3px #808d93,
+    -3px 2px #cdd2d5,
+    -3px 4px #808d93,
+    -4px 3px #cdd2d5,
+    -4px 5px #808d93,
+    -5px 4px #cdd2d5,
+    -5px 6px #808d93,
+    -6px 5px #cdd2d5,
+    -6px 7px #808d93,
+    -7px 6px #cdd2d5;
+}
+.intro a{
+	color:#fff;
+	font-size:24px;
 }
 .intro .social{
 	width:100%;
@@ -85,6 +106,17 @@ h1{
 .intro .social span i:hover{
 	background:#fff;
 	color:#000;
+}
+.intro_img_left{
+	float:left;
+}
+.intro_img_right{
+	float:right;
+}
+.intro_img_left,.intro_img_right{
+	width:250px;
+	height:250px;
+	margin:50px;
 }
 .about{
 	background:url(../img/about.jpg);
@@ -112,7 +144,7 @@ h1{
 	height:100%;
 }
 #particles-js canvas{
-	margin-top:-460px !important;
+	margin-top:-240px !important;
 }
 .navbar .navbar-nav {
     display: inline-block !important;
@@ -185,8 +217,14 @@ h1{
 input, textarea, select{
 	color:#fff !important;
 }
+.clearfix{
+	clear:both;
+}
 @media(max-width:480px){
 	.intro h1{
 		padding-top: 100px;
+	}
+	.intro img{
+		display:none;
 	}
 }
