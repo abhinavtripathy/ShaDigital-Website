@@ -230,3 +230,10 @@ input, textarea, select{
 	}
 }
 
+/* For ensuring that cards from the service section get split into multiple
+lines for smaller screens */
+@media only screen and (max-width : 767px) {
+	.box {
+		height: auto !important;
+	}
+}

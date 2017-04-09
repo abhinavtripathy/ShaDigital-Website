@@ -26,5 +26,6 @@
     <orderEntry type="library" scope="PROVIDED" name="safe_yaml (v1.0.4, rbenv: 2.3.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.23, rbenv: 2.3.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="scss_lint (v0.52.0, rbenv: 2.3.1) [gem]" level="application" />
+    <orderEntry type="library" name="jquery.matchHeight" level="application" />
   </component>
 </module>

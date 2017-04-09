@@ -32,7 +32,6 @@
 				<li><a href="#home" id="goto_home">Home</a></li>
 				<li><a href="#about" id="goto_about">About</a></li>
 				<li><a href="#services" id="goto_services">Services</a></li>
-				<li><a href="#blog" id="goto_blog">Blog</a></li>
 				<li><a href="#contact" id="goto_contact">Contact</a></li>
 				<!-- <li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -79,9 +78,8 @@
 		</section>
 		<section class="about" id="about">
 			<h1>At Sha Digital</h1>
-			<!-- <span id="about_content"></span> -->
             <div id="about_content">
-                <!-- This div is the container for the text gettting typed
+                <!-- This div is the container for the text getting typed
                 and untyped -->
             </div>
 		</section>
@@ -90,10 +88,10 @@
 		</section>
 		<section class="services" id="services">
 			<h1>Services</h1>
-			<div class="row" style="margin:0;">
+			<div class="row match-my-cols">
 				<div class="col-md-4">
 					<div class="bs-component">
-                        <div class="alert alert-blue center">
+                        <div class="alert alert-blue center box">
                             <h3>Website Development</h3>
                             <p>We will build a website for you!</p>
                             <p>
@@ -107,7 +105,7 @@
 				  </div>
 				<div class="col-md-4">
 					<div class="bs-component">
-					    <div class="alert alert-danger center">
+					    <div class="alert alert-danger center box">
 						    <h3>Social Media Marketing</h3>
                             <p>A necessary evil..</p>
                             <p>
@@ -123,7 +121,7 @@
 				  </div>
 				<div class="col-md-4">
 					<div class="bs-component">
-					    <div class="alert alert-orange center">
+					    <div class="alert alert-orange center box">
 						    <h3>Online Advertising</h3>
                             <p>
                                 Do you talk about your business everywhere you
@@ -138,14 +136,7 @@
 					</div>
 				  </div>
 			</div>
-			<div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <a href="#contact" class="goto_contact">
-                        Set up a FREE phone consultation today.
-                    </a>
-                </div>
-            </div>
-		</section>
+        </section>
 		<section class="contact" id="contact">
 			<h1>Contact Us</h1>
 			<div class="row" style="margin:0">
@@ -193,6 +184,7 @@
 	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="libs/jquery/jquery.colors.min.js"></script>
+    <script type="text/javascript" src="libs/matchHeight/dist/jquery.matchHeight-min.js"></script>
 	<script type="text/javascript" src="libs/tether/dist/js/tether.min.js"></script>
 	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="libs/bootstrap-material-design/dist/js/material.min.js"></script>
@@ -269,6 +261,9 @@
             return false;
         });
 	});
+
+    /* Every element with the class box will have the same height */
+    $('.box').matchHeight();
 	</script>
 </body>
 </html>
