@@ -61,15 +61,26 @@ h1{
 }
 .intro h1{
 	padding-top: 100px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	font-size: 60px;
 }
 
-h1 span {
+.intro h1 span {
 	background: rgb(0, 0, 0); /* fallback color */
 	background: rgba(0, 0, 0, 0.7);
-	padding: 10px;
 }
+.intro h2 {
+	font-size: 40px;
+	color:#fff;
+	vertical-align:middle;
+}
+
+.intro h2 span {
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 8px;
+}
+
 .intro a{
 	color:#fff;
 	font-size:24px;
