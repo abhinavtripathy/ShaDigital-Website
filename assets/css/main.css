@@ -157,6 +157,7 @@ h1{
 	background: url(../img/services.jpg) no-repeat fixed 50% 50%;
 	background-size: cover;
 	text-align:left;
+	height:auto !important;
 }
 .services h1{
 	text-align:Center;
