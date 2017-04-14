@@ -206,6 +206,11 @@ input, textarea, select{
 	width:700px;
 	height:700px;
 }
+option{
+	background:#00695C;
+	padding:5px;
+	outline:none;
+}
 @media(max-width:1280px){
 	.videos iframe{
 		padding:100px;
